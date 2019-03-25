@@ -1,0 +1,9 @@
+Notater fra kurset
+
+For å kunne lage en POM, så må du først
+
+1) Finne alle sidene og hvordan de henger sammen
+2) Deretter lager du en klasse for hver side du har
+
+
+Før dette må ha du ha satt opp basemodel, dvs den som styrer hvordan du gjør ting
