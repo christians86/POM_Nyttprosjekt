@@ -8,7 +8,7 @@ import java.util.Properties;
 public class util {
 
     public static Object properties( String key)
-        {
+    {
         try {
             FileInputStream configfil = new FileInputStream ( "Config/config.properties" );
             Properties property = new Properties();
@@ -19,7 +19,22 @@ public class util {
         } catch (IOException e) {
             e.printStackTrace ();
         }
-            return null;
+        return null;
+    }
+    public static String webelements( String key)
+    {
+        try {
+            FileInputStream configfil = new FileInputStream ( "Config/element.properties" );
+            Properties webelementconfig = new Properties();
+            webelementconfig.load ( configfil );
+            return webelementconfig.get(key).toString ();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace ();
+        } catch (IOException e) {
+            e.printStackTrace ();
         }
+        return null;
+    }
+
 
 }

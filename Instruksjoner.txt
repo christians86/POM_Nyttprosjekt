@@ -7,3 +7,7 @@ For å kunne lage en POM, så må du først
 
 
 Før dette må ha du ha satt opp basemodel, dvs den som styrer hvordan du gjør ting
+
+
+Assertions:
+
