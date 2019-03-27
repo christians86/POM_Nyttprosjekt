@@ -11,6 +11,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
+@SuppressWarnings("ALL")
 public class Forside {
 
     //Dette er din constructor
@@ -40,7 +41,7 @@ public class Forside {
     private WebElement logginn;
 
     @FindBy(how = How.ID, using = Configuration.forside_loginboks)
-    public WebElement loginboks;
+    private WebElement loginboks;
 
     @FindBy(how = How.ID, using = Configuration.forside_fotodropdown)
     public WebElement forside_fotodropdown;
@@ -71,7 +72,7 @@ public class Forside {
 
     //Poenget med denne er er å lage metoden. Dvs du kan ikke kalle @findby og så få noe til å skje, du må ha en method. Det er hva du beskriver under. Du må lage en method per item. I dette tilfellet om loginboks var noe med action så måtte du lagd det også.
     // på denne siden er "longinboks" et element, og det tar tid å laste. Selenium er veldig kjapp, og vil kræsje hvis siden din ikke holder følge, dermed så var det viktig å legge inn dette elementet for å kunne ha en wait method senere.
-    private void landingpage (){
+    public void landingpage (){
 
     }
     public void logginnboks (){
@@ -81,6 +82,51 @@ public class Forside {
     public void logginn (){
 
         logginn.click ();
+
+    }
+    public void forside_fotodropdown (){
+
+        forside_fotodropdown.click ();
+
+    }
+    public void forside_videodropdown (){
+
+        forside_videodropdown.click ();
+
+    }
+    public void forside_lysogstudiodropdown (){
+
+        forside_lysogstudiodropdown.click ();
+
+    }
+    public void forside_bruktdropdown (){
+
+        forside_bruktdropdown.click ();
+
+    }
+    public void forside_arrangementerdropdown (){
+
+        forside_arrangementerdropdown.click ();
+
+    }
+    public void forside_omInterfoto (){
+
+        forside_omInterfoto.click ();
+
+    }
+    public void meny_mellomformat (){
+
+        meny_mellomformat.click ();
+
+    }
+    public void meny_analog (){
+
+        meny_analog.click ();
+
+    }
+    public void meny_optikk (){
+
+        meny_optikk.click ();
 
     }
 

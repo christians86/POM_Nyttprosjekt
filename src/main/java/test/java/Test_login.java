@@ -1,5 +1,8 @@
+package test.java;
+
 import no.interfoto.sider.Forside;
 import no.interfoto.sider.Logginn;
+import no.interfoto.util.util;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
@@ -17,6 +20,8 @@ public class Test_login {
 
     public static void main(String [] args) throws IOException {
 
+
+        WebDriver driver = new util.properties("Chrome");
         FileInputStream fis = new FileInputStream ( "C:\\Users\\Admin\\IdeaProjects\\Test_POM\\src\\main\\java\\com\\way2automation\\interfoto\\config\\OR.properties");
         config.load ( fis );
 
@@ -25,13 +30,8 @@ public class Test_login {
 
 
         Forside forside = PageFactory.initElements ( driver, Forside.class );
-        Logginn login = PageFactory.initElements ( driver, Logginn.class );
         wait.until ( ExpectedConditions.elementToBeClickable ( forside.loginboks ) );
-        login.brukernavn ();
-        login.passord ();
-        forside.logginn ();
-        forside.loginboks.sendKeys ( "" );
-
+        util.properties("chrome")
 
 
     }
