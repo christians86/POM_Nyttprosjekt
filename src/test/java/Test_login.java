@@ -19,7 +19,8 @@ public class Test_login {
 
         FileInputStream fis = new FileInputStream ( "C:\\Users\\Admin\\IdeaProjects\\Test_POM\\src\\main\\java\\com\\way2automation\\interfoto\\config\\OR.properties");
         config.load ( fis );
-        WebDriver driver = new ChromeDriver ();
+
+        startdriver.toString ().equalsIgnoreCase ( "Chrome" );
         driver.get (config.getProperty ("testsite")); WebDriverWait wait = new WebDriverWait (driver, 3);
 
 
@@ -30,8 +31,8 @@ public class Test_login {
         login.passord ();
         forside.logginn ();
         forside.loginboks.sendKeys ( "" );
-        Object startdriver = null;
-        startdriver.toString ().equalsIgnoreCase ( "Chrome" );
+
+
 
     }
 

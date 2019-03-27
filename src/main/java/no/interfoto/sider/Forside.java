@@ -17,7 +17,7 @@ public class Forside {
 
     public static
     Properties config = new Properties (  );
-    FileInputStream fis = new FileInputStream ( "C:\\Users\\Admin\\IdeaProjects\\Test_POM\\src\\main\\java\\com\\way2automation\\interfoto\\config\\OR.properties");
+    FileInputStream fis = new FileInputStream ( "C:\\Users\\Admin\\IdeaProjects\\Test_POM\\src\\main\\java\\com\\way2automation\\interfoto\\config\\config.properties");
 
 
     WebDriver driver;
