@@ -11,7 +11,7 @@ class Configuration {
     public static final String forside_lysogstudiodropdown="//a[@class='dropdown-toggle'][contains(text(),'Lys & studio')]";
     public static final String forside_bruktdropdown="//a[@class='dropdown-toggle'][contains(text(),'Brukt & Innbytte')]";
     public static final String forside_arrangementerdropdown="//a[@class='dropdown-toggle'][contains(text(),'Arrangementer')]";
-    public static final String forside_omInterfotodropdown="Om Interfoto";
+    public static final String forside_omInterfoto="Om Interfoto";
 
 
     //Selectors fotomeny
